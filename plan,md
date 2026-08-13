@@ -1,0 +1,26 @@
+## Savings Tracker v3 Notes
+
+This project has moved from a prototype portfolio tracker to a richer local-first personal savings app.
+
+### Implemented Direction
+
+1. Keep the Expo managed workflow and existing Zustand persisted asset/history/settings data.
+2. Add local-only savings goals and portfolio snapshots as additive persisted stores.
+3. Restore Dashboard as the main control center with totals, rates, charts, goals, trends, and recent activity.
+4. Keep Assets focused on fast entry and management with search, filters, sort controls, type totals, confirm delete, and undo.
+5. Add full History and Goals tabs.
+6. Upgrade backup/export flows with JSON import/export and CSV exports.
+7. Keep UI theme-driven, accessible, and friendly to web, Android, and iOS.
+
+### Verification Gate
+
+Run these before considering a v3 change complete:
+
+```bash
+npm run typecheck
+npm run lint
+npm run test -- --runInBand
+npx expo install --check
+```
+
+Also smoke-test the web app across Dashboard, Assets, History, Goals, and Settings in light and dark theme.
